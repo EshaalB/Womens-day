@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.2;
+  background-color: #d2a0e8;
+  background-image: url("image2.png");
+}
+
+.image {
+  mix-blend-mode: darken;
+  flex: 1;
+  height: 500px;
+  width: 500px;
+}
+
+nav {
+  height: 40px;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+nav ul {
+  background-color: #e9d3f1;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 5px;
+}
+
+nav .logo {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  align-items: left;
+  text-decoration: none;
+}
+
+nav ul li {
+  padding: 0 20px;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #9c63c0;
+  font-size: 0.8rem;
+}
+
+nav ul li a:hover {
+  background-color: #9c63c0;
+  color: #e9d3f1;
+  transition: all ease-in-out 0.5s;
+  padding: 0 20px;
+}
+
+.hero {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  position: relative;
+}
+
+.hero .content {
+  flex: 1;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-family: "Fugaz One", sans-serif;
+  color: #9c63c0;
+}
+
+.hero p {
+  font-size: 1rem;
+  margin-bottom: 40px;
+}
+
+.btn {
+  background-color: #9c63c0;
+  color: #fff;
+  border: none;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0 2px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #e9d3f1;
+  color: #9c63c0;
+  transition: all ease-in-out 0.5s;
+}
+footer {
+  text-align: right;
+  margin: 0px 20px;
+}
+
+.icons {
+  display: inline-block;
+  color: #9c63c0;
+}
+
+.icons i {
+  font-size: 24px;
+  margin-left: 10px;
+  transition: all 0.3s ease;
+}
+
+.icons i:hover {
+  color: #e9d3f1;
+  transform: scale(1.2);
+}
+
+@media screen and (max-width: 768px) {
+  .image {
+    max-width: none;
+    width: 100%;
+  }
+
+  .hero .content {
+    flex: 1;
+    padding: 0;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
